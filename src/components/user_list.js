@@ -11,8 +11,8 @@ class UserList extends Component {
     return (
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
-        <p className="card-text">Dunder Mifflin</p>
-        <a className="btn btn-primary">{user.name.toLowerCase()}@dundermifflin.com</a>
+        <p className="card-text">{user.company.name}</p>
+        <a className="btn btn-primary" href={user.website}>Website</a>
       </div>
     )
   }
